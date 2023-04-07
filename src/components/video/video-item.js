@@ -21,7 +21,8 @@ const VideoItem = ({ video }) => {
     <div className='video' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       {isHovering ? (
         <>
-          <video src={video.url} autoPlay muted={isMuted} loop />
+          <video src={video.url} autoPlay muted={isMuted} controls loop />
+          {/* We can always pass controls for more controls.. but to give feel like youtube, we have used mute icon separately in top-right corner */}
           {isMuted ? 
             <img id='mute' className='mute-icon' style={{display: isHovering ? 'block' : 'none'}} onClick={toggleMuted} src='https://icon-library.com/images/unmute-icon/unmute-icon-20.jpg' alt='Unmute icon' />
              : <img id='mute' className='mute-icon' style={{display: isHovering ? 'block' : 'none'}} onClick={toggleMuted} src='https://www.freeiconspng.com/thumbs/sound-off-icon/sound-off-music-mute-off-sound-speaker-volume-icon-16.png' alt='Mute icon' />
