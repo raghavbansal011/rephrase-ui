@@ -1,0 +1,16 @@
+.header-container {
+    padding: 10px 20px;
+    background-color: #1b2630;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 100px;
+}
+.user-icon {
+    margin-top: 2px;
+    height: 20px;
+    background-color: white;
+    padding: 2px;
+    border-radius: 50%;
+}

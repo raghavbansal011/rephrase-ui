@@ -1,0 +1,102 @@
+.video > video {
+    width: 200px;
+}
+.video:hover {
+    transform: scale(1.3);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    background-color: #103252;
+    border: 1px solid white;
+    z-index: 2;
+    opacity: 1;
+}
+.video {
+    margin: 10px 5px;
+    width: 200px;
+    position: relative;
+    border: 1px solid transparent;
+    opacity: 0.8;
+}
+.thumbnail > img {
+    width: 200px;
+}
+.thumbnail > img:hover {
+    cursor: pointer;
+}
+
+.video-page {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.video-info {
+    color: white;
+    border: 1px solid white;
+    padding: 0px 2px;
+    margin-top: -3px;
+}
+.secondary-info {
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    color: white;
+}
+.mute-icon {
+    width: 20px;
+    position: absolute;
+    right: 8px;
+    top: 5px;
+}
+
+@media screen and (max-width: 1370px) {
+    .video {
+        width: 22%;
+    }
+    .video > video, .thumbnail > img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1096px) {
+    .video {
+        width: 30%;
+    }
+    .video > video, .thumbnail > img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .video {
+        width: 45%;
+    }
+    .video > video, .thumbnail > img {
+        width: 100%;
+    }
+    .video-info {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .video, .video > video, .thumbnail > img {
+        width: 200px;
+    }
+    .video-info {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .video-page {
+        justify-content: center;
+    }
+    .video, .video > video, .thumbnail > img {
+        width: 300px;
+    }
+    .video-info {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,17 @@
+#search-input {
+    height: 24px;
+    width: 100%;
+}
+
+.search-bar {
+    background-color: aliceblue;
+    position: relative;
+    border-radius: 16px;
+    width: 40%;
+}
+.search-icon {
+    height: 20px;
+    position: absolute;
+    right: 0px;
+    top: 4px;
+}
